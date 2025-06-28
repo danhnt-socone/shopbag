@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Túi xách hàng hiệu</title></head>
+<body>
+    <h1>Danh sách sản phẩm</h1>
+    {% for product in products %}
+        <div>
+            <img src="{{ product.image }}" width="150" alt="image">
+            <p>{{ product.name }} - {{ product.price }} VND</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
